@@ -232,6 +232,10 @@ Let's set up a Vue component to manage logins and sign ups. We'll use Magic Link
 </script>
 ```
 
+### User state
+
+To access the user information, use the composable [useSupabaseUser](https://supabase.nuxtjs.org/usage/composables/use-supabase-user) provided by the Supabase Nuxt module.
+
 ### Account component
 
 After a user is signed in we can allow them to edit their profile details and manage their account.
@@ -342,7 +346,7 @@ Now that we have all the components in place, let's update `app.vue`:
 </template>
 
 <script setup>
-const user = useSupabaseUser()
+  const user = useSupabaseUser()
 </script>
 ```
 

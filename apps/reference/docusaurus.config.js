@@ -90,6 +90,16 @@ const config = {
         breadcrumbs: false,
         editUrl:
           'https://github.com/supabase/supabase/edit/master/apps/reference/',
+        lastVersion: 'v0',
+        versions: {
+          current: {
+            label: 'v1-dev',
+            path: '/next',
+          },
+          v0: {
+            label: 'v0',
+          },
+        },
       },
     ],
     [
@@ -102,28 +112,15 @@ const config = {
         breadcrumbs: false,
         editUrl:
           'https://github.com/supabase/supabase/edit/master/apps/reference/',
-        lastVersion: 'v1',
+        lastVersion: 'current',
         versions: {
           current: {
-            label: 'v2 RC',
-            path: '/next',
+            label: 'v2',
           },
           v1: {
             label: 'v1',
           },
         },
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: '_auth_helpers',
-        path: '_auth_helpers',
-        routeBasePath: '/reference/auth-helpers',
-        sidebarPath: require.resolve('./nav/auth_helpers_sidebars.js'),
-        breadcrumbs: false,
-        editUrl:
-          'https://github.com/supabase/supabase/edit/master/apps/reference/',
       },
     ],
   ],
@@ -181,6 +178,22 @@ const config = {
                 to: '/oss',
               },
               {
+                label: 'Terms of Service',
+                to: '/docs/company/terms',
+              },
+              {
+                label: 'Privacy Policy',
+                to: '/docs/company/privacy',
+              },
+              {
+                label: 'Acceptable Use Policy',
+                to: '/docs/company/aup',
+              },
+              {
+                label: 'Service Level Agreement',
+                to: '/docs/company/sla',
+              },
+              {
                 label: 'Humans.txt',
                 to: 'https://supabase.com/humans.txt',
               },
@@ -219,6 +232,14 @@ const config = {
             title: 'Community',
             items: [
               {
+                label: 'SupaSquad',
+                href: 'https://supabase.com/docs/handbook/supasquad',
+              },
+              {
+                label: 'Contributing',
+                href: 'https://supabase.com/docs/handbook/contributing',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/supabase/supabase',
               },
@@ -237,15 +258,6 @@ const config = {
               {
                 label: 'Discord',
                 href: 'https://discord.supabase.com',
-              },
-            ],
-          },
-          {
-            title: 'Beta',
-            items: [
-              {
-                label: 'Join our beta',
-                href: 'https://app.supabase.com',
               },
             ],
           },

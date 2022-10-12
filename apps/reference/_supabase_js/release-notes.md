@@ -6,9 +6,9 @@ id: release-notes
 
 Supabase.js v2 release notes.
 
-## 2.0.0 Release Candidate
+## 2.0.0
 
-Install the latest with `npm install @supabase/supabase-js@rc`.
+Install the latest with `npm install @supabase/supabase-js`.
 
 ### Explicit constructor options
 
@@ -78,7 +78,7 @@ Previously `nullsFirst` defaults to `false` , meaning `null`s are ordered last. 
 
 ### Cookies and localstorage namespace
 
-Storage key name in the Auth library has changed to include project reference which means that existing website that had their JWT expiry set to a longer time could find their user’s logged out with this upgrade.
+Storage key name in the Auth library has changed to include project reference which means that existing websites that had their JWT expiry set to a longer time could find their users logged out with this upgrade.
 
 ```jsx
 const defaultStorageKey = `sb-${

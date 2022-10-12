@@ -79,7 +79,7 @@ You can use it completely, or just the features you need.
         description={'User management with Row Level Security.'}
         style={{ height: '100%' }}
       />
-    </div>    
+    </div>
     {/* Auto-generated APIs */}
     <div class="col col--4">
       <ButtonCard
@@ -116,7 +116,7 @@ You can use it completely, or just the features you need.
         class="card"
         to={useBaseUrl('/guides/realtime')}
         title={'Realtime'}
-        description={'Build with Broadcast, Presence, and Postgres Changes.'}
+        description={'Build with Broadcast, Presence, and Postgres CDC.'}
         style={{ height: '100%' }}
       />
     </div>
@@ -158,11 +158,16 @@ Supabase is just Postgres, which makes it compatible with a large number of tool
               <x.logo
                 width="20"
                 alt={x.name}
-                style={{ display: 'block', maxHeight: 20 }}
+                style={{ display: 'block', maxHeight: 20, minWidth: 20 }}
               />
             ) : (
               <ThemedImage
-                style={{ display: 'block', maxHeight: 20 }}
+                style={{
+                  display: 'block',
+                  maxHeight: 20,
+                  minWidth: 20,
+                  margin: 0,
+                }}
                 alt={x.name}
                 width="20"
                 sources={{
